@@ -3403,7 +3403,7 @@
 /* Flexgrid */
 
 	.grid-style {
-		width: 100%;
+		width: 85%;
 		margin: 0 0 2.5rem 0;
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -3877,8 +3877,8 @@
 		-webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-		-webkit-overflow-scrolling: touch;
-		background: rgba(0, 0, 0, 0.95); */
+		-webkit-overflow-scrolling: touch;*/
+		background: rgba(0, 0, 0, 0.95);
 		box-shadow: none;
 		color: #000;
 		height: 100%;
@@ -3888,7 +3888,7 @@
 		position: fixed;
 		right: 0;
 		top: 0;
-		visibility: hidden;
+		visibility: visible;
 		width: 20rem;
 		z-index: 10002;
 	}
@@ -3934,8 +3934,8 @@
 			/* -moz-transition: color 0.2s ease-in-out;
 			-webkit-transition: color 0.2s ease-in-out;
 			-ms-transition: color 0.2s ease-in-out;
-			transition: color 0.2s ease-in-out;
-			-webkit-tap-highlight-color: transparent; */
+			transition: color 0.2s ease-in-out;*/
+			-webkit-tap-highlight-color: transparent; 
 			border: 0;
 			color: #999999;
 			cursor: pointer;
@@ -3947,7 +3947,7 @@
 			right: 0;
 			text-align: right;
 			top: 0;
-			vertical-align: middle;
+			/* vertical-align: middle; */
 			width: 7rem;
 		}
 
