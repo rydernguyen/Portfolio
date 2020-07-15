@@ -3869,7 +3869,7 @@
 /* Menu */
 
 	#menu {
-		/* -moz-transform: translateX(20rem);
+		-moz-transform: translateX(20rem);
 		-webkit-transform: translateX(20rem);
 		-ms-transform: translateX(20rem);
 		transform: translateX(20rem);
@@ -3878,7 +3878,7 @@
 		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-webkit-overflow-scrolling: touch;
-		background: rgba(0, 0, 0, 0.95); */
+		background: rgba(0, 0, 0, 0.95);
 		box-shadow: none;
 		color: #000;
 		height: 100%;
@@ -3931,11 +3931,11 @@
 
 		#menu .close {
 			text-decoration: none;
-			/* -moz-transition: color 0.2s ease-in-out;
+			-moz-transition: color 0.2s ease-in-out;
 			-webkit-transition: color 0.2s ease-in-out;
 			-ms-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;
-			-webkit-tap-highlight-color: transparent; */
+			-webkit-tap-highlight-color: transparent;
 			border: 0;
 			color: #999999;
 			cursor: pointer;
@@ -3979,10 +3979,10 @@
 			}
 
 		#menu.visible {
-			/* -moz-transform: translateX(0);
+			-moz-transform: translateX(0);
 			-webkit-transform: translateX(0);
 			-ms-transform: translateX(0);
-			transform: translateX(0); */
+			transform: translateX(0);
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
