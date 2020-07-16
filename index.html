@@ -120,6 +120,7 @@
             </footer>
 
             <!-- Nav -->
+            <div id="toggleMenu" onclick="toggleMenu()"></div>
             <nav id="menu">
                 <ul class="links">
                     <li><a href="index.html">Home</a></li>
@@ -133,8 +134,19 @@
                         <li><a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-file-text-o"><span> Resume</span></a></li>
                         <li><a href="#" class="icon fa-envelope-o"><span> Email</span></a></li>
                     </ul>
-                    
                 </ul>
             </nav>
+            <script>
+                var toggleStatus = 1;
+                function toggleMenu(){
+                    if (toggleStatus==1) {
+                        document.getElementById("menu").style.right = "-20rem";
+                        toggleStatus = 0;
+                    } else if (toggleStatus==0){
+                        document.getElementById("menu").style.right = "0px";
+                        toggleStatus = 1;
+                    }
+                }
+            </script>
     </body>
 </html>
