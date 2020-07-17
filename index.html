@@ -10,64 +10,32 @@
         <link rel="stylesheet" href="assets/css/main.css" />
     </head>
 
-    <body onload="loadMenu()" onscroll="scrollfunc()">
-        <script>
-            function loadMenu(){
-                document.getElementById("menu").style.right = "-20rem";}
-        </script>
-
+    <body>
+    <!-- <div class="container">
+        <iframe src="files/Resume.pdf" title="My Resume" frameborder="0" width="100%" height="600opx"></iframe>
+    </div> -->
         <!-- Header -->
         <header id="header" class="alt">
             <div class="logo"><a href="index.html">Ryder Nguyen<span> Portfolio</span></a></div>
-            <a href="#menu" onclick="toggleMenu()">MENU</a>
-            
-            <div></div>
-            <!--Nav -->
-            <nav id="menu">
-                <ul class="links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="generic.html">Generic</a></li>
-                    <li><a href="elements.html">Elements</a></li>
-                    
-                    <li><h3>Contact info</h3></li>
-                    <ul class="links">
-                        <li><a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-linkedin-square"><span> LinkedIn</span></a></li>
-                        <li><a href="https://github.com/rydernguyen?tab=repositories" class="icon fa-github"><span> Github</span></a></li>
-                        <li><a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-file-text-o"><span> Resume</span></a></li>
-                        <li><a href="#" class="icon fa-envelope-o"><span> Email</span></a></li>
-                    </ul>
-                </ul>
-            </nav>
-
-            <script>
-                var toggleStatus = 0;
-                function toggleMenu(){
-                    if (toggleStatus==1) {
-                        document.getElementById("menu").style.right = "-20rem";
-                        toggleStatus = 0;
-                    } else if (toggleStatus==0){
-                        document.getElementById("menu").style.right = "0px";
-                        toggleStatus = 1;
-                    }
-                }
-            </script>
+            <a href="#menu">Menu</a>
         </header>
 
-        <script>
-            // Get the header
-            var header = document.getElementById("header");
-
-            // Get the offset position of the navbar
-            var sticky = header.offsetTop;
-
-            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-            function scrollfunc() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");}
-            }
-        </script>
+        <!--Nav -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="generic.html">Generic</a></li>
+                <li><a href="elements.html">Elements</a></li>
+            
+                <li><h3>Contact info</h3></li>
+                <ul class="links">
+                    <li><a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-linkedin-square"><span> LinkedIn</span></a></li>
+                    <li><a href="https://github.com/rydernguyen?tab=repositories" class="icon fa-github"><span> Github</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-file-text-o"><span> Resume</span></a></li>
+                    <li><a href="#" class="icon fa-envelope-o"><span> Email</span></a></li>
+                </ul>
+            </ul>
+        </nav>
 
         <!-- One -->
         <section id="one" class="wrapper style2">
@@ -77,14 +45,16 @@
                     <div>
                         <div class="box">
                             <div class="image fit">
-                                <img src="images/pic02.jpg" alt="" />
+                                <img src="images/data.jpg" alt="" />
                             </div>
                             <div class="content">
                                 <header class="align-center">
-                                    <p>maecenas sapien feugiat ex purus</p>
-                                    <h2>Lorem ipsum dolor</h2>
+                                    <p>Interests & Everything Beautiful</p>
+                                    <h2>About Me</h2>
                                 </header>
-                                <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
+                                <p>
+                                    I was born in Vietnam and have been living in the United States for more than 10 years. My experience started out with being an exchange student in Granbury, Texas. Since then, I’ve been to schools in three different states and have had more than three years of work experience in the financial industry. Graduated with a Bachelor’s degree in Actuarial Science, I am currently located in San Francisco pursuing a Master’s degree in Business Analytics.
+                                </p>
                                 <footer class="align-center">
                                     <a href="#" class="button alt">Learn More</a>
                                 </footer>
@@ -94,15 +64,17 @@
 
                     <div>
                         <div class="box">
-                            <div class="image fit">
+                            <div class="image fitted">
                                 <img src="images/headshotfinal.png" alt="" />
                             </div>
                             <div class="content">
                                 <header class="align-center">
-                                    <p>mattis elementum sapien pretium tellus</p>
-                                    <h2>Vestibulum sit amet</h2>
+                                    <p>Interests & Everything Beautiful</p>
+                                    <h2>Interests & Everything Beautiful</h2>
                                 </header>
-                                <p> Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit amet tortor velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis volutpat lacus placerat malesuada.</p>
+                                <p>
+                                    I am a self-identified creative mind trapped inside a mathematical brain. I have a fascination with numbers and computer programs and enthralled by the power of big data. To keep myself from going haywire, I find my refuge in my creative side from time to time. My artistic adventures include singing in choruses (Boston Gay Men's chorus and San Francisco Gay Men’s chorus), pencil sketching, acting in plays and musicals, and most of all, baking to satisfy his sweet tooth.
+                                </p>
                                 <footer class="align-center">
                                     <a href="#" class="button alt">Learn More</a>
                                 </footer>
@@ -113,23 +85,75 @@
                 </div>
             </div>
         </section>
+
         <!-- Two -->
         <section id="two" class="wrapper style3">
             <div class="inner">
                 <header class="align-center">
-                    <p>This is section 2</p>
-                    <h2>Morbi maximus justo</h2>
+                    <p>Projects</p>
+                    <h2>My past and ongoing projects</h2>
                 </header>
             </div>
+        </section>
+        
+        <!-- Banner -->
+        <section class="banner full">
+            <article>
+                <a href="https://templated.co" target="_blank">
+                    <img src="images/slide01.jpg" alt=""/>
+                </a>
+                <div class="inner">
+                    <header>
+                        <p>A free responsive web site template by <a href="https://templated.co" target="_blank">TEMPLATED</a></p>
+                        <h2>Hielo</h2>
+                    </header>
+                </div>
+            </article>
+            <article>
+                <img src="images/slide02.jpg" alt="" />
+                <div class="inner">
+                    <header>
+                        <p>Lorem ipsum dolor sit amet nullam feugiat</p>
+                        <h2>Magna etiam</h2>
+                    </header>
+                </div>
+            </article>
+            <article>
+                <img src="images/slide03.jpg"  alt="" />
+                <div class="inner">
+                    <header>
+                        <p>Sed cursus aliuam veroeros lorem ipsum nullam</p>
+                        <h2>Tempus dolor</h2>
+                    </header>
+                </div>
+            </article>
+            <article>
+                <img src="images/slide04.jpg"  alt="" />
+                <div class="inner">
+                    <header>
+                        <p>Adipiscing lorem ipsum feugiat sed phasellus consequat</p>
+                        <h2>Etiam feugiat</h2>
+                    </header>
+                </div>
+            </article>
+            <article>
+                <img src="images/slide05.jpg"  alt="" />
+                <div class="inner">
+                    <header>
+                        <p>Ipsum dolor sed magna veroeros lorem ipsum</p>
+                        <h2>Lorem adipiscing</h2>
+                    </header>
+                </div>
+            </article>
         </section>
 
         <!-- Three -->
 			<section id="three" class="wrapper style2">
 				<div class="inner">
-					<header class="align-center">
+					<!-- <header class="align-center">
 						<p class="special">This is section THREE</p>
 						<h2>Morbi maximus justo</h2>
-					</header>
+					</header> -->
 					<div class="gallery">
 						<div>
 							<div>
@@ -154,7 +178,9 @@
 					</div>
 				</div>
             </section>
+
             <!-- Footer -->
+            <!-- <section id="footersection" class="wrapper style2"> -->
             <footer id="footer">
                 <div class="container">
                     <ul class="icons">
@@ -168,7 +194,20 @@
                     &copy; Untitled. All rights reserved.
                 </div>
             </footer>
+            <!-- </section> -->
+            <!-- <script>
+                $(document).ready(function() {
+                    $("#menu-toggle").click(function(){
+                        $("#menu").toggle();
+                    });
+                });
+            </script> -->
 
-
+    		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
     </body>
 </html>
