@@ -1847,7 +1847,7 @@
 			}
 
 		.box .content {
-			padding: 3rem;
+			padding: 2rem;
 		}
 
 		.box > :last-child,
@@ -2364,7 +2364,7 @@
 		.image.fitted {
 			display: block;
 			/* margin: 0 0 2rem 0; */
-			width: 80%;
+			width: 85%;
 			margin-top: auto;
 			margin-left: auto;
 			margin-right: auto;
@@ -3114,7 +3114,7 @@
 		.wrapper.style3 {
 			background-color: #000;
 			color: #bfbfbf;
-			background-image: url(../../images/earthquake.jpg);
+			/* background-image: url(../../images/earthquake.jpg); */
 			background-size: cover;
 			background-attachment: fixed;
 			background-position: center;
@@ -4001,6 +4001,86 @@
 			box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
+
+		#menu > ul.links > li > ul.links {
+			list-style: none;
+			/* margin-left: 2em; */
+		}
+
+		#projectlist {
+			/* -moz-transform: translateY(20rem);
+			-webkit-transform: translateY(20rem);
+			-ms-transform: translateY(20rem);
+			transform: translateY(20rem); */
+			-moz-transition: -moz-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+			-webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+			-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+			transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+			-webkit-overflow-scrolling: touch;
+			background: rgba(0, 0, 0, 0.95);
+			box-shadow: none;
+			color: #000;
+			height: 100%;
+			max-width: 80%;
+			overflow-y: auto;
+			padding: 3rem 2rem;
+			position: fixed;
+			right: 0;
+			top: 0;
+			visibility: hidden;
+			width: 20rem;
+			z-index: 10002;
+		}
+
+		#projectlist .close {
+			text-decoration: none;
+			-moz-transition: color 0.2s ease-in-out;
+			-webkit-transition: color 0.2s ease-in-out;
+			-ms-transition: color 0.2s ease-in-out;
+			transition: color 0.2s ease-in-out;
+			-webkit-tap-highlight-color: transparent;
+			border: 0;
+			color: #999999;
+			cursor: pointer;
+			display: block;
+			height: 3.25rem;
+			line-height: 3.25rem;
+			padding-right: 1.25rem;
+			position: absolute;
+			right: 0;
+			text-align: right;
+			top: 0;
+			vertical-align: middle;
+			width: 7rem;
+		}
+
+			#projectlist .close:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				text-transform: none !important;
+			}
+
+			#projectlist .close:before {
+				content: '\f00d';
+				font-size: 1.25rem;
+			}
+
+			#projectlist .close:hover {
+				color: #000;
+			}
+
+			#projectlist.visible {
+				-moz-transform: translateY(0);
+				-webkit-transform: translateY(0);
+				-ms-transform: translateY(0);
+				transform: translateY(0);
+				box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
+				visibility: visible;
+			}
+
 
 		@media screen and (max-width: 736px) {
 
