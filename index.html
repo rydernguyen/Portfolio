@@ -21,17 +21,16 @@
         <nav id="menu">
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="generic.html">Generic</a></li>
-                <li><a href="elements.html">Elements</a></li>
-                
-                <div class="dropdown">
-                <li><a href="#" class="dropbtn">All Projects</li>
-                  <div class="dropdown-content">
-                    <a href="fractals.html">Fractals Analysis</a>
-                    <a href="earthquake.html">Earthquake Analysis</a>
-                    <a href="monte.html">Monte Carlo Simulation</a>
-                  </div>
-                </div>
+                <li><a href="resume.html">Resume</a></li>
+
+                <li><a href="#">Projects</a>
+                    <ul>
+                        <li><a href="covid.html">COVID Analysis</a></li>
+                        <li><a href="fractals.html">Fractals Analysis</a></li>
+                        <li><a href="earthquake.html">Earthquake Analysis</a></li>
+                        <li><a href="monte.html">Monte Carlo Simulation</a></li>
+                    </ul>
+                </li>
                 
                 <br><br><br><br>
                 <div id="bottom">
@@ -39,8 +38,8 @@
                 <ul class="links">
                     <li><a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-linkedin-square" target="_blank"><span> LinkedIn</span></a></li>
                     <li><a href="https://github.com/rydernguyen?tab=repositories" class="icon fa-github" target="_blank"><span> Github</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-file-text-o" target="_blank"><span> Resume</span></a></li>
-                    <li><a href="#" class="icon fa-envelope-o" target="_blank"><span> Email</span></a></li>
+                    <li><a href="resume.html" class="icon fa-file-text-o" target="_blank"><span> Resume</span></a></li>
+                    <li><a href="#sendmail" class="icon fa-envelope-o" onclick="displayalert()"><span> Email</span></a></li>
                 </ul>
                 </div>
             </ul>
@@ -76,13 +75,12 @@
                                     I am a self-identified creative mind trapped inside a mathematical brain. I have a fascination with numbers and computer programs and enthralled by the power of big data. To keep myself from going haywire, I find my refuge in my creative side from time to time. My artistic adventures include singing in choruses (Boston Gay Men's chorus and San Francisco Gay Men’s chorus), pencil sketching, acting in plays and musicals, and most of all, baking to satisfy his sweet tooth.
                                 </p>
                                 <footer class="align-center">
-                                    <a href="#" class="button alt">Treasure box</a>
+                                    <a href="resume.html" class="button alt">Resume</a>
                                     <a href="#" class="button alt">Treasure box</a>
                                 </footer>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -106,7 +104,6 @@
                                 My past projects ranges from financial modeling (fractals application and Monte Carlo simulation) to environmental science (earthquake-related loss analysis). With a strong background in math and finance, I was naturally drawn to those research areas. Throughout my studies at Hult, I acquired more tools (Python and R) that further reinforce my ability to do more in-depth analysis at a higher speed. With the world in a global health crisis, I became more interested in healthcare. My past hackathon (Code for Venezuela) and ongoing project (COVID-19) with groups of Hult students demonstrates such interest. Cryptocurrencies and the mechanics of blockchains became an interest in recent year and I became intrigued. In regards to environmental sustainability, I became interested in researching about new materials (Mycelium).
                             </p>
                             <header class="align-center">
-                            <p></p>
                             </header>
                     </div>
                 </div>
@@ -114,19 +111,28 @@
         </section>
 
         <!-- DIVIDER -->
-        <section id="two" class="wrapper style3">
+        <!-- <section class="wrapper style3">
             <div class="inner">
                 <header class="align-center">
                     <p>Explore my projects below</p>
                     <h2>Projects</h2>
                 </header>
             </div>
-        </section>
+        </section> -->
 
         <!-- Banner -->
         <section class="banner full">
             <article>
-                <a href="https://templated.co" target="_blank"> <img src="images/milkywaysq.jpg" alt=""/></a>
+                <img src="images/hexagon.jpg" alt="" />
+                <div class="inner">
+                    <header>
+                        <p><a href="covid.html"></a></p>
+                        <h2><a href="covid.html">COVID-19</a></h2>
+                    </header>
+                </div>
+            </article>
+            <article>
+                <img src="images/hexagon.jpg" alt=""/>
                 <div class="inner">
                     <header>
                         <p><a href="fractals.html">Fractals in financial modeling - Application & Advantages</a></p>
@@ -135,7 +141,7 @@
                 </div>
             </article>
             <article>
-                <img src="images/test.jpg" alt="" />
+                <img src="images/hexagon.jpg" alt="" />
                 <div class="inner">
                     <header>
                         <p><a href="earthquake.html">Earthquake risk in in Back Bay, Boston - Estimation & Analysis of Losses</a></p>
@@ -144,7 +150,7 @@
                 </div>
             </article>
             <article>
-                <img src="images/milkywaysq.jpg" alt="" />
+                <img src="images/hexagon.jpg" alt="" />
                 <div class="inner">
                     <header>
                         <p><a href="monte.html"></a>IRR projection using Monte Carlo - Excel model using macros and VBA</p>
@@ -152,139 +158,27 @@
                     </header>
                 </div>
             </article>
-            <article>
-                <img src="images/milkywaysq.jpg" alt="" />
-                <div class="inner">
-                    <header>
-                        <p><a href="monte.html"></a></p>
-                        <h2><a href="monte.html">Monte Carlo</a></h2>
-                    </header>
-                </div>
-            </article>
         </section>
-
-        <!-- Three -->
-			<!-- <section id="three" class="wrapper style2">
-				<div class="inner">
-					<header class="align-center">
-						<p class="special">This is section THREE</p>
-						<h2>Morbi maximus justo</h2>
-					</header>
-					<div class="gallery">
-						<div>
-							<div>
-								<a href="fractals.html"><img src="images/panel.png" alt="" /></a>
-							</div>
-						</div>
-						<div>
-							<div>
-								<a href="#"><img src="images/panel1.png" alt="" /></a>
-							</div>
-						</div>
-						<div>
-							<div>
-								<a href="#"><img src="images/panel2.png" alt="" /></a>
-							</div>
-						</div>
-						<div>
-							<div>
-								<a href="#"><img src="images/panel3.png" alt="" /></a>
-							</div>
-						</div>
-					</div>
-				</div>
-            </section> -->
-
-            <br><br>
-            <!-- Form -->
-            <section>
-            <div id="form" class="container">
-            <h3>Form</h3>
-
-            <form method="post" action="#">
-                <div class="row uniform">
-                    <div class="6u 12u$(xsmall)">
-                        <input type="text" name="name" id="name" value="" placeholder="Name" />
-                    </div>
-                    <div class="6u$ 12u$(xsmall)">
-                        <input type="email" name="email" id="email" value="" placeholder="Email" />
-                    </div>
-                    <!-- Break -->
-                    <div class="12u$">
-                        <div class="select-wrapper">
-                            <select name="category" id="category">
-                                <option value="">- Category -</option>
-                                <option value="1">Manufacturing</option>
-                                <option value="1">Shipping</option>
-                                <option value="1">Administration</option>
-                                <option value="1">Human Resources</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- Break -->
-                    <div class="4u 12u$(small)">
-                        <input type="radio" id="priority-low" name="priority" checked>
-                        <label for="priority-low">Low Priority</label>
-                    </div>
-                    <div class="4u 12u$(small)">
-                        <input type="radio" id="priority-normal" name="priority">
-                        <label for="priority-normal">Normal Priority</label>
-                    </div>
-                    <div class="4u$ 12u$(small)">
-                        <input type="radio" id="priority-high" name="priority">
-                        <label for="priority-high">High Priority</label>
-                    </div>
-                    <!-- Break -->
-                    <div class="6u 12u$(small)">
-                        <input type="checkbox" id="copy" name="copy">
-                        <label for="copy">Email me a copy of this message</label>
-                    </div>
-                    <div class="6u$ 12u$(small)">
-                        <input type="checkbox" id="human" name="human" checked>
-                        <label for="human">I am a human and not a robot</label>
-                    </div>
-                    <!-- Break -->
-                    <div class="12u$">
-                        <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-                    </div>
-                    <!-- Break -->
-                    <div class="12u$">
-                        <ul class="actions">
-                            <li><input type="submit" value="Send Message" /></li>
-                            <li><input type="reset" value="Reset" class="alt" /></li>
-                        </ul>
-                    </div>
-                </div>
-            </form>
-
-            <hr />
-
-            <form method="post" action="#">
-                <div class="row uniform">
-                    <div class="9u 12u$(small)">
-                        <input type="text" name="query" id="query" value="" placeholder="Query" />
-                    </div>
-                    <div class="3u$ 12u$(small)">
-                        <input type="submit" value="Search" class="fit" />
-                    </div>
-                </div>
-            </form>
-            </section>
-
             <!-- Footer -->
             <footer id="footer">
                 <div class="container">
                     <ul class="icons">
-                        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                        <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-linkedin-square" target="_blank"><span class="label"> LinkedIn</span></a></li>
+                        <li><a href="https://github.com/rydernguyen?tab=repositories" class="icon fa-github" target="_blank"><span class="label"> Github</span></a></li>
+                        <li><a href="#sendmail" class="icon fa-envelope-o" onclick="displayalert()"><span class="label"> Email</span></a></li>
                     </ul>
                 </div>
                 <div class="copyright">
-                    &copy; Untitled. All rights reserved.
+                    &copy; Ryder Nguyen. Templates from <a href="www.TEMPLATED.CO" target="_blank">TEMPLATED.CO</a> All rights reserved.
                 </div>
             </footer>
+
+            
+            <!-- Display email alert -->
+            <script>
+                function displayalert(){
+                window.alert("Email me at rydernguyen@gmail.com. Hope to hear from you!");}
+            </script>
 
             <!-- Import jquery -->
 			<script src="assets/js/jquery.min.js"></script>

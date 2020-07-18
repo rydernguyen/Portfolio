@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width" intital-scale=1>
-        <title>Ryder Nguyen_Fractals</title>
+        <title>Ryder Nguyen_Monte Carlo</title>
         <style>
             h2 {color: green;}
         </style>
@@ -12,34 +12,47 @@
     
     <body>
         <!-- Header -->
-        <header id="header" class="alt">
+        <header id="headernew" class="alt">
             <div class="logo"><a href="index.html">Ryder Nguyen<span> Portfolio</span></a></div>
-            <a href="#menu">Menu</a>
+            <a href="#menu" class="icon fa-bars"> Menu</a>
         </header>
-
-        <!--Nav -->
+        
+        <!-- Nav -->
         <nav id="menu">
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="generic.html">Generic</a></li>
-                <li><a href="elements.html">Elements</a></li>
-                <li><a href="#">Test</a>
-                    <nav id="projectlist">
-                    <ul class="links">
-                        <li><a href="#" class="icon fa-linkedin-square" target="_blank"><span> LinkedIn</span></a></li>
+                <li><a href="resume.html">Resume</a></li>
+
+                <li><a href="#">Projects</a>
+                    <ul>
+                        <li><a href="covid.html">COVID Analysis</a></li>
+                        <li><a href="fractals.html">Fractals Analysis</a></li>
+                        <li><a href="earthquake.html">Earthquake Analysis</a></li>
+                        <li><a href="monte.html">Monte Carlo Simulation</a></li>
                     </ul>
-                    </nav>
                 </li>
-            
+                
+                <br><br><br><br>
+                <div id="bottom">
                 <li><h3>Contact info</h3></li>
                 <ul class="links">
                     <li><a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-linkedin-square" target="_blank"><span> LinkedIn</span></a></li>
                     <li><a href="https://github.com/rydernguyen?tab=repositories" class="icon fa-github" target="_blank"><span> Github</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-file-text-o" target="_blank"><span> Resume</span></a></li>
-                    <li><a href="#" class="icon fa-envelope-o" target="_blank"><span> Email</span></a></li>
+                    <li><a href="resume.html" class="icon fa-file-text-o" target="_blank"><span> Resume</span></a></li>
+                    <li><a href="#sendmail" class="icon fa-envelope-o" onclick="displayalert()"><span> Email</span></a></li>
                 </ul>
+                </div>
             </ul>
         </nav>
+
+        <section id="two" class="wrapper style3">
+            <div class="inner">
+                <header class="align-center">
+                    <p>Internal Rate of Return for an Investment Fund</p>
+                    <h2>Monte Carlo Simulation</h2>
+                </header>
+            </div>
+        </section>
 
         <!-- Two -->
         <section id="two" class="wrapper style2">
@@ -47,9 +60,14 @@
                 <div class="box">
                     <div class="content">
                         <header class="align-center">
-                            <p>maecenas sapien feugiat ex purus</p>
-                            <h2>Lorem ipsum dolor</h2>
+                            <!-- <p>maecenas sapien feugiat ex purus</p>
+                            <h2>Lorem ipsum dolor</h2> -->
                         </header>
+                            <h2>Summary</h2>
+                            <p>
+                                I was originally interested in this project because of my curiosity for financial markets. As part of my business education at Bentley University, I studied different financial models and their applications. However, they all seem too naïve and always come with lots of uncertainties and limitations. Therefore, for my senior capstone project, I decided to look into fractals and their advantages in modeling time series. In the simplest terms, fractal is a self-similar pattern on every scale. They are structures that exist in nature where the whole is comprised of the smaller components that resemble the whole. They are in the tree branches where a big tree branch is made out of similar smaller branches. They are in a human body (in the branch-like linings of the lung, of the heart). They can exist in small things like the spiraling pattern of a seashell or big things like the galaxy. In math terms, fractals are created by simple equations or repeated procedures to get to the final product.
+                            </p> <span id="dots">...</span><span id="more">
+                            
                             <h2>Introduction</h2>
                             <p>
                                 I was originally interested in this project because of my curiosity for financial markets. As part of my business education at Bentley University, I studied different financial models and their applications. However, they all seem too naïve and always come with lots of uncertainties and limitations. Therefore, for my senior capstone project, I decided to look into fractals and their advantages in modeling time series. In the simplest terms, fractal is a self-similar pattern on every scale. They are structures that exist in nature where the whole is comprised of the smaller components that resemble the whole. They are in the tree branches where a big tree branch is made out of similar smaller branches. They are in a human body (in the branch-like linings of the lung, of the heart). They can exist in small things like the spiraling pattern of a seashell or big things like the galaxy. In math terms, fractals are created by simple equations or repeated procedures to get to the final product.
@@ -61,54 +79,16 @@
                             <h2>Conclusion</h2>
                             <p>
                                 Models are not perfect predictors of prices and returns. Though the MSM proves to be a better model in some respect to GARCH (1,1) and the original Bacheliers random walk model, it still has its limitations. With the scope of this project, it cannot be said for sure what contributed to some of the MSMs weak points (simulations of tail index and the regression for the Canadian dollar). Dealing with the most volatile currency due to high rates of inflation in the past, both the MSM and GARCH are successful in capturing the changing volatilities and simulating the Brazilian Real. With further study, it can be determined whether or not a data series with specific properties can be modeled better by using MSM instead of GARCH. One cannot predict exactly what the price or return of an asset will be in a week or even on the next day. However, speculations can be made and fractals are a great tool to analyze and try to imitate what properties financial data possesses in terms of volatility clustering, large price swings and interdependency. Both MSM and GARCH can be enhanced further with more complex specifications, accommodating a wide range of data series. Though cannot predict prices, the MSM and the GARCH are used to model stochastic volatility which is instrumental in the understanding of the financial markets where volatilities change based on the time periods. One has to have not only knowledge and expertise of the asset of interest but he/she also needs the analytical skills required to process a huge amount of data that the financial markets produce. Since the MSM and the GARCH perform well in most cases, further applications of the two techniques can be utilized. For example, one could potentially put together a stock portfolio containing different stocks moving in different directions to lower the risk and maximize the return of the portfolio. Also, with the power to model volatility quite accurately, the result portfolio could be attractive to potential investors. The most this project has done is to show how volatile and risky the financial markets are and to present two models to quantify that risk better than some common methods. Most of the time when people, especially investors, chase after profits, they often underestimate the risk markets inherently possess. Until a better model arrives, an investor should fully know the economic forces that drive the asset returns and know how much risk he/she is partaking.
-                            </p>
+                            </p></span>
                             <footer class="align-center">
                                 <a href="index.html" class="button alt">Home</a>
+                                <button onclick="myFunction()" id="myBtn">Read more</button>
+                                <a href="https://drive.google.com/file/d/1inFnY-HykYZEBThXL6zlnygLCzkSxQl4/view?usp=sharing" class="button special icon fa-search" target="_blank"> View Full</a>
                             </footer>
                     </div>
                 </div>
             </div>
         </section>
-
-            <!-- Banner -->
-            <section class="banner full">
-                <article>
-                    <a href="https://templated.co" target="_blank"> <img src="images/milkywaysq.jpg" alt=""/></a>
-                    <div class="inner">
-                        <header>
-                            <p><a href="fractals.html">Fractals in financial modeling - Application & Advantages</a></p>
-                            <h2><a href="fractals.html">Fratals analysis</a></h2>
-                        </header>
-                    </div>
-                </article>
-                <article>
-                    <img src="images/test.jpg" alt="" />
-                    <div class="inner">
-                        <header>
-                            <p><a href="earthquake.html">Earthquake risk in in Back Bay, Boston - Estimation & Analysis of Losses</a></p>
-                            <h2><a href="earthquake.html">Earthquake analysis</a></h2>
-                        </header>
-                    </div>
-                </article>
-                <article>
-                    <img src="images/milkywaysq.jpg" alt="" />
-                    <div class="inner">
-                        <header>
-                            <p><a href="monte.html"></a>IRR projection using Monte Carlo - Excel model using macros and VBA</p>
-                            <h2><a href="monte.html">Monte Carlo</a></h2>
-                        </header>
-                    </div>
-                </article>
-                <article>
-                    <img src="images/milkywaysq.jpg" alt="" />
-                    <div class="inner">
-                        <header>
-                            <p><a href="monte.html"></a></p>
-                            <h2><a href="monte.html">Monte Carlo</a></h2>
-                        </header>
-                    </div>
-                </article>
-            </section>
 
             <!-- Footer -->
             <footer id="footer">
@@ -124,6 +104,31 @@
                     &copy; Untitled. All rights reserved.
                 </div>
             </footer>
+
+            <!-- Display email alert -->
+            <script>
+                function displayalert(){
+                window.alert("Email me at rydernguyen@gmail.com. Hope to hear from you!");}
+            </script>
+
+            <!-- To display dropdown menu -->
+            <script>
+                function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+                }
+            </script>
 
             <!-- Import jquery -->
 			<script src="assets/js/jquery.min.js"></script>

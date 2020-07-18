@@ -1,83 +1,142 @@
-<!DOCTYPE HTML>
-<!--
-	Hielo by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Hielo by TEMPLATED</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="subpage">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" intital-scale=1>
+        <title>Ryder Nguyen_Earthquake</title>
+        <style>
+            h2 {color: green;}
+        </style>
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    
+    <body>
+        <!-- Header -->
+        <header id="headernew" class="alt">
+            <div class="logo"><a href="index.html">Ryder Nguyen<span> Portfolio</span></a></div>
+            <a href="#menu" class="icon fa-bars"> Menu</a>
+        </header>
+        
+        <!-- Nav -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="logo"><a href="index.html">Hielo <span>by TEMPLATED</span></a></div>
-				<a href="#menu">Menu</a>
-			</header>
+                <li><a href="#">Projects</a>
+                    <ul>
+                        <li><a href="covid.html">COVID Analysis</a></li>
+                        <li><a href="fractals.html">Fractals Analysis</a></li>
+                        <li><a href="earthquake.html">Earthquake Analysis</a></li>
+                        <li><a href="monte.html">Monte Carlo Simulation</a></li>
+                    </ul>
+                </li>
+                
+                <br><br><br><br>
+                <div id="bottom">
+                <li><h3>Contact info</h3></li>
+                <ul class="links">
+                    <li><a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-linkedin-square" target="_blank"><span> LinkedIn</span></a></li>
+                    <li><a href="https://github.com/rydernguyen?tab=repositories" class="icon fa-github" target="_blank"><span> Github</span></a></li>
+                    <li><a href="resume.html" class="icon fa-file-text-o" target="_blank"><span> Resume</span></a></li>
+                    <li><a href="#sendmail" class="icon fa-envelope-o" onclick="displayalert()"><span> Email</span></a></li>
+                </ul>
+                </div>
+            </ul>
+        </nav>
 
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Generic</a></li>
-					<li><a href="elements.html">Elements</a></li>
-				</ul>
-			</nav>
+        <section id="two" class="wrapper style3">
+            <div class="inner">
+                <header class="align-center">
+                    <p>Earthquake Risk in Back Bay, Boston - Estimation and Analysis of Losses</p>
+                    <h2>Earthquake Analysis</h2>
+                </header>
+            </div>
+        </section>
 
-		<!-- One -->
-			<section id="One" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
-						<p>Eleifend vitae urna</p>
-						<h2>Generic Page Template</h2>
-					</header>
-				</div>
-			</section>
+        <!-- Two -->
+        <section id="two" class="wrapper style2">
+            <div class="inner">
+                <div class="box">
+                    <div class="content">
+                            <h2>Summary</h2>
+                            <p>
+                                I was originally interested in this project because of my curiosity for financial markets. As part of my business education at Bentley University, I studied different financial models and their applications. However, they all seem too naïve and always come with lots of uncertainties and limitations. Therefore, for my senior capstone project, I decided to look into fractals and their advantages in modeling time series. In the simplest terms, fractal is a self-similar pattern on every scale. They are structures that exist in nature where the whole is comprised of the smaller components that resemble the whole. They are in the tree branches where a big tree branch is made out of similar smaller branches. They are in a human body (in the branch-like linings of the lung, of the heart). They can exist in small things like the spiraling pattern of a seashell or big things like the galaxy. In math terms, fractals are created by simple equations or repeated procedures to get to the final product.
+                            </p> <span id="dots">...</span><span id="more">
+                            <h2>Introduction</h2>
+                            <p>
+                                To finish my liberal studies in Earth, Environment & Global Sustainability, I was looking for a project that would combine both my analytical skills and my interest in environmental sustainability. From a course about the history of Boston, I learned that part of Boston was land-filled by carving down nearby mountains. I then became interested in looking at the risks associated with a possible catastrophe.
+                                <br>
+                                Exploring my options, I decided to estimate the financial risk after an earthquake in Back Bay, Boston which was almost entirely filled in. Though the risk of earthquake is not as prevalent on the east coast compared to the west coast, buildings were built without a potential earthquake in mind. I used San Francisco as my point of comparison since the city by the bay was also built on a substantial amount of landfill and have experienced many earthquakes in the past.
+                                <br>
+                                I used a program called HAZUS developed by the Federal Emergency Management Agency (FEMA) in order to estimate the loss exposure posed by vulnerable infrastructure. Certain assumptions and point of comparison were made including Cape Ann earthquake happened in 1755, proportion of commercial to residential buildings, and value of assets at risk.
+                            </p>
+                            <h2>Main Findings</h2>
+                            <ul>
+                                <li>Primary risk is caused by liquefaction. Most susceptible soil type D per Geological Survey classification is prevalent in Back Bay. Due to the earth shaking, water pressure increases in saturated soil. Once the water pressure increases, soil particles can readily move with respect to each other.</li>
+                                <li>Buildings in Back Bay make up a total dollar exposure of about 9.9 billion. Wood and masonry buildings are most at risk with the latter incurring the most direct economic loss of 12.5 million dollars.</li>
+                                <li>According to AIR Worldwide, the cost associated with an earthquake will most likely not be paid by insurance companies but by taxpayers through the form of disaster relief fund.</li>
+                            </ul>
+                            <h2>Conclusion</h2>
+                            <p>
+                                It is important for homeowners, business owners, landlords, institutions and insurance companies in the Back Bay area to have a quantifiable measurement of the earthquake risk they partake. Understanding the economic and social impacts caused by an earthquake will be crucial in preemptive planning for future catastrophes. Most importantly, the great potential loss by buildings urges urban planners, the authority and engineers to strive for more stable structure and designs that could greatly decrease the amount of dollar loss. Though the risk posed by liquefaction is almost unavoidable since the whole of Back Bay is already developed and buildings are closely located, there are techniques mentioned that should be implemented in newly developed areas. Though the risk is small, companies and the government should bear watch and update the estimated cost often. They also need to require stricter building standards that would make the buildings withstand the impact of earthquakes.
+                            </p>
+                            </span>
+                            <footer class="align-center">
+                                <a href="index.html" class="button alt">Home</a>
+                                <button onclick="myFunction()" id="myBtn">Read more</button>
+                                <a href="https://drive.google.com/file/d/1WXsYos4pEv4fxzv7XbTz1KBUdQGMRd5z/view?usp=sharing" class="button special icon fa-search" target="_blank"> View Full</a>
+                            </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<!-- Two -->
-			<section id="two" class="wrapper style2">
-				<div class="inner">
-					<div class="box">
-						<div class="content">
-							<header class="align-center">
-								<p>maecenas sapien feugiat ex purus</p>
-								<h2>Lorem ipsum dolor</h2>
-							</header>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at dignissim augue, in iaculis neque. Etiam bibendum felis ac vulputate pellentesque. Cras non blandit quam. Nunc porta, est non posuere sagittis, neque nunc pellentesque diam, a iaculis lacus urna vitae purus. In non dui vel est tempor faucibus. Aliquam erat volutpat. Quisque vel est vitae nibh laoreet auctor. In nec libero dui. Nulla ullamcorper, dolor nec accumsan viverra, libero eros rutrum metus, vel lacinia magna odio non nunc. Praesent semper felis eu rhoncus aliquam. Donec at quam ac libero vestibulum pretium. Nunc faucibus vel arcu in malesuada. Aenean at velit odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas commodo erat eget molestie sollicitudin. Donec imperdiet, ex sed blandit dictum, ipsum metus ultrices arcu, vitae euismod nisl sapien vitae tortor.</p>
+            <!-- Footer -->
+            <footer id="footer">
+                <div class="container">
+                    <ul class="icons">
+                        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    &copy; Untitled. All rights reserved.
+                </div>
+            </footer>
 
-							<p>Vivamus nec odio ac ligula congue feugiat at vitae leo. Aenean sem justo, finibus sed dui eu, accumsan facilisis dolor. Fusce quis dui eget odio iaculis aliquam vel sed velit. Nulla pellentesque posuere semper. Nulla eu sagittis lorem, a auctor nulla. Sed ac condimentum orci, ac varius ante. Nunc blandit quam sit amet sollicitudin sodales.</p>
+            <!-- To display dropdown menu -->
+            <script>
+                function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
 
-							<p>Vivamus ultricies mollis mauris quis molestie. Quisque eu mi velit. In et cursus nibh. Donec facilisis, orci sed mollis hendrerit, nunc risus mattis odio, eget efficitur nisl orci a lectus. Aenean finibus neque convallis orci sollicitudin tincidunt. Vivamus lacinia facilisis diam, quis facilisis nisi luctus nec. Aliquam ac molestie enim, ut ultrices elit. Fusce laoreet vulputate risus in tincidunt. Sed commodo mollis maximus. Nullam varius laoreet nibh sit amet facilisis. Donec ac odio vehicula, consequat elit et, sodales justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam ac auctor mauris, in hendrerit libero. </p>
-						</div>
-					</div>
-				</div>
-			</section>
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+                }
+            </script>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="container">
-					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-					</ul>
-				</div>
-				<div class="copyright">
-					&copy; Untitled. All rights reserved.
-				</div>
-			</footer>
+            <!-- Display email alert -->
+            <script>
+                function displayalert(){
+                window.alert("Email me at rydernguyen@gmail.com. Hope to hear from you!");}
+            </script>
 
-		<!-- Scripts -->
+            <!-- Import jquery -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-	</body>
+    </body>
 </html>
