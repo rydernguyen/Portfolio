@@ -3937,17 +3937,16 @@
 		}
 
 /* Resume */
-
 	#resume {
-		/* -moz-transform: translateX(20rem);
+		-moz-transform: translateX(20rem);
 		-webkit-transform: translateY(20rem);
-		-ms-transform: translateY(20rem)
+		-ms-transform: translateY(20rem);
 		transform: translateY(20rem);
 		-moz-transition: -moz-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-		-webkit-overflow-scrolling: touch; */
+		-webkit-overflow-scrolling: touch;
 		/* background: rgba(0, 0, 0, 0.95);
 		box-shadow: none;
 		color: #000;
@@ -3962,12 +3961,12 @@
 		overflow:hidden;
 		overflow-x:hidden;
 		overflow-y:hidden;
-		position:fixed;
-		top:0px;
+		/* position:absolute; */
+		/* top:0px;
 		left:0px;
 		right:0px;
 		bottom:0px;
-		height:auto;
+		height:auto; */
 		/* display: block; */
 		/* margin-left: auto;
 		margin-right: auto; */
@@ -3977,19 +3976,65 @@
 		padding-top: 3.25em;
 		/* padding-right: auto; */
 		width:100%;
+		visibility: hidden;
 	}
 
-	#resume > iframe{
-		overflow:hidden;
-		overflow-x:hidden;
-		overflow-y:hidden;
-		position:absolute;
-		top:0px;
-		left:0px;
-		right:0px;
-		bottom:0px;
-		height:120%;
-		width:120%;
+	#resume .close {
+		text-decoration: none;
+		-moz-transition: color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out;
+		-webkit-tap-highlight-color: transparent;
+		border: 0;
+		color: #999999;
+		cursor: pointer;
+		display: block;
+		height: 3.25rem;
+		line-height: 3.25rem;
+		padding-right: 1.25rem;
+		position: absolute;
+		right: 0;
+		text-align: right;
+		top: 0;
+		vertical-align: middle;
+		width: 7rem;
+	}
+
+		#resume .close:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+		}
+
+		#resume .close:before {
+			content: '\f00d';
+			font-size: 1.25rem;
+		}
+
+		#resume .close:hover {
+			color: #000;
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#resume .close {
+				height: 4rem;
+				line-height: 4rem;
+			}
+
+		}
+
+	#resume.visible {
+		-moz-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+		box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
+		visibility: visible;
 	}
 /* Menu */
 
@@ -4290,6 +4335,7 @@
 			}
 
 		}
+
 
 /* Banner */
 

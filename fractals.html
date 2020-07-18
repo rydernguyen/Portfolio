@@ -17,32 +17,43 @@
             <a href="#menu" class="icon fa-bars"> Menu</a>
         </header>
 
-        <nav id="two" class="wrapper style3">
+        <!-- <section>
+        <nav id="resume" class="wrapper style3">
         <div class="inner">
             <header class="align-center">
-            <!-- <embed src="files/Resume.pdf" type="application/pdf" width="80%" height="600px"/> -->
-            <!-- <object data="files/Resume.pdf" type="application/pdf" width="80%" height="600px"></object> -->
+            <embed src="files/Resume.pdf" type="application/pdf" width="80%" height="600px"/>
+            <object data="files/Resume.pdf" type="application/pdf" width="80%" height="600px"></object>
             <iframe src="files/Resume.pdf" frameborder="0" type="application/pdf" width="80%" height="600px"></iframe>
             </header>
         </div>
         </nav>
-
+        </section> -->
         
         <!-- Nav -->
         <nav id="menu">
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="generic.html">Generic</a></li>
-                <li><a href="elements.html">Elements</a></li>
+                <!-- <li><a href="generic.html">Generic</a></li> -->
+                <!-- <li><a href="elements.html">Elements</a></li> -->
+                <li><a href="resume.html">Resume</a></li>
                 
-                <div class="dropdown">
-                <li><a href="#" class="dropbtn">All Projects</li>
+                <!-- <div class="dropdown">
+                <li><a href="#" class="dropbtn">Projects</li>
                   <div class="dropdown-content">
                     <a href="fractals.html">Fractals Analysis</a>
                     <a href="earthquake.html">Earthquake Analysis</a>
                     <a href="monte.html">Monte Carlo Simulation</a>
                   </div>
-                </div>
+                </div> -->
+
+                <li><a href="#">Projects</a>
+                    <ul>
+                        <li><a href="fractals.html">Fractals Analysis</a></li>
+                        <li><a href="fractals.html">Fractals Analysis</a></li>
+                        <li><a href="earthquake.html">Earthquake Analysis</a></li>
+                        <li><a href="monte.html">Monte Carlo Simulation</a></li>
+                    </ul>
+                </li>
                 
                 <br><br><br><br>
                 <div id="bottom">
@@ -50,12 +61,17 @@
                 <ul class="links">
                     <li><a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-linkedin-square" target="_blank"><span> LinkedIn</span></a></li>
                     <li><a href="https://github.com/rydernguyen?tab=repositories" class="icon fa-github" target="_blank"><span> Github</span></a></li>
-                    <li><a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-file-text-o" target="_blank"><span> Resume</span></a></li>
-                    <li><a href="#" class="icon fa-envelope-o" target="_blank"><span> Email</span></a></li>
+                    <li><a href="resume.html" class="icon fa-file-text-o" target="_blank"><span> Resume</span></a></li>
+                    <li><a href="#sendmail" class="icon fa-envelope-o" onclick="displayalert()"><span> Email</span></a></li>
                 </ul>
                 </div>
             </ul>
         </nav>
+
+        <script>
+            function displayalert(){
+            window.alert("Email me at rydernguyen@gmail.com. Hope to hear from you!");}
+        </script>
 
         <section id="two" class="wrapper style3">
             <div class="inner">
@@ -96,37 +112,6 @@
                 </div>
             </div>
         </section>
-
-            <!-- Banner
-            <section class="banner full">
-                <article>
-                    <img src="images/test.jpg" alt="" />
-                    <div class="inner">
-                        <header>
-                            <p><a href="earthquake.html">Earthquake risk in in Back Bay, Boston - Estimation & Analysis of Losses</a></p>
-                            <h2><a href="earthquake.html">Earthquake analysis</a></h2>
-                        </header>
-                    </div>
-                </article>
-                <article>
-                    <img src="images/milkywaysq.jpg" alt="" />
-                    <div class="inner">
-                        <header>
-                            <p><a href="monte.html"></a>IRR projection using Monte Carlo - Excel model using macros and VBA</p>
-                            <h2><a href="monte.html">Monte Carlo</a></h2>
-                        </header>
-                    </div>
-                </article>
-                <article>
-                    <img src="images/milkywaysq.jpg" alt="" />
-                    <div class="inner">
-                        <header>
-                            <p><a href="monte.html"></a></p>
-                            <h2><a href="monte.html">Monte Carlo</a></h2>
-                        </header>
-                    </div>
-                </article> -->
-            <!-- </section> -->
 
             <!-- Footer -->
             <footer id="footer">
