@@ -14,11 +14,11 @@
         <!-- Header -->
         <header id="headernew" class="alt">
             <div class="logo"><a href="index.html">Ryder Nguyen<span> Portfolio</span></a></div>
-            <a href="#menu">Menu</a>
+            <a href="#menu" class="icon fa-bars"> Menu</a>
         </header>
 
         <!--Nav -->
-        <nav id="menu">
+        <!-- <nav id="menu">
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="generic.html">Generic</a></li>
@@ -39,13 +39,30 @@
                     <li><a href="#" class="icon fa-envelope-o" target="_blank"><span> Email</span></a></li>
                 </ul>
             </ul>
+        </nav> -->
+
+        <nav id="menu">
+            <div class="navbar">
+                <a href="#home">Home</a>
+                <a href="#news">News</a>
+                <div class="dropdown">
+                  <button class="dropbtn">More
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div>
+              </div>
         </nav>
 
         <section id="two" class="wrapper style3">
             <div class="inner">
                 <header class="align-center">
-                    <p>Projects</p>
-                    <h2>My completed and ongoing projects</h2>
+                    <p>Markov-Switching Multifractals Model- Application & Advantages in modeling financial time series</p>
+                    <h2>Fractals Analysis</h2>
                 </header>
             </div>
         </section>
@@ -62,7 +79,7 @@
                             <h2>Introduction</h2>
                             <p>
                                 I was originally interested in this project because of my curiosity for financial markets. As part of my business education at Bentley University, I studied different financial models and their applications. However, they all seem too naïve and always come with lots of uncertainties and limitations. Therefore, for my senior capstone project, I decided to look into fractals and their advantages in modeling time series. In the simplest terms, fractal is a self-similar pattern on every scale. They are structures that exist in nature where the whole is comprised of the smaller components that resemble the whole. They are in the tree branches where a big tree branch is made out of similar smaller branches. They are in a human body (in the branch-like linings of the lung, of the heart). They can exist in small things like the spiraling pattern of a seashell or big things like the galaxy. In math terms, fractals are created by simple equations or repeated procedures to get to the final product.
-                            </p>
+                            </p> <span id="dots">...</span><span id="more">
                             <h2>Abstract</h2>
                             <p>
                                 This project looks into and compares different models in analyzing and predicting time series, specifically currency rates, highlighting the modeling of the returns of the Brazilian Real, Japanese Yen, Canadian Dollar and British Pound. One of the earliest models used to predict asset prices was the random walk model that assumes returns are normally distributed with a constant variance. There are many limitations to this model: the underestimation of the possibility of large price swings and the dismissal of volatility clustering. An improvement on the random walk model is the generalized autoregressive conditional heteroscedasticity model (GARCH) and the Markov-switching multifractal model (MSM) that are the focus of this paper. Both GARCH and MSM are stochastic volatility models that take into account the changing volatilities from time to time, freeing up the models from the constraints of constant volatility and making them more adaptable to real world scenarios, and including important assumptions like price interdependency (also called long memory). Based on the original idea of using fractals in modeling time series by Benoit Mandelbrot, professors Laurent E. Calvet and Adlai J. Fisher incorporated the idea of using both Markov-chain and Multifractals to predict volatilities. MSM proves to be a better model than GARCH in a number of circumstances as shown by comparing the Maximum Likelihood Values, Tail Indices and the fit of the forecasts. The three models were used to analyze and forecast the mentioned currencies and their results were then compared. Analysis was done through self-built Excel models, and parameters were gathered to project the data forward. With embedded VBA coding, the MSM model can be set up to accommodate a large amount of data (often requires 64-bit version of Excel) for cases of k=1 to k=10 though the computing power was limited to k=7 to get the estimated parameters. Specific to the MSM, k is the number of distinct components in a multifractal model and was proven by Calvet and Fisher to make the model perform at its best when k =10.
@@ -70,9 +87,10 @@
                             <h2>Conclusion</h2>
                             <p>
                                 Models are not perfect predictors of prices and returns. Though the MSM proves to be a better model in some respect to GARCH (1,1) and the original Bacheliers random walk model, it still has its limitations. With the scope of this project, it cannot be said for sure what contributed to some of the MSMs weak points (simulations of tail index and the regression for the Canadian dollar). Dealing with the most volatile currency due to high rates of inflation in the past, both the MSM and GARCH are successful in capturing the changing volatilities and simulating the Brazilian Real. With further study, it can be determined whether or not a data series with specific properties can be modeled better by using MSM instead of GARCH. One cannot predict exactly what the price or return of an asset will be in a week or even on the next day. However, speculations can be made and fractals are a great tool to analyze and try to imitate what properties financial data possesses in terms of volatility clustering, large price swings and interdependency. Both MSM and GARCH can be enhanced further with more complex specifications, accommodating a wide range of data series. Though cannot predict prices, the MSM and the GARCH are used to model stochastic volatility which is instrumental in the understanding of the financial markets where volatilities change based on the time periods. One has to have not only knowledge and expertise of the asset of interest but he/she also needs the analytical skills required to process a huge amount of data that the financial markets produce. Since the MSM and the GARCH perform well in most cases, further applications of the two techniques can be utilized. For example, one could potentially put together a stock portfolio containing different stocks moving in different directions to lower the risk and maximize the return of the portfolio. Also, with the power to model volatility quite accurately, the result portfolio could be attractive to potential investors. The most this project has done is to show how volatile and risky the financial markets are and to present two models to quantify that risk better than some common methods. Most of the time when people, especially investors, chase after profits, they often underestimate the risk markets inherently possess. Until a better model arrives, an investor should fully know the economic forces that drive the asset returns and know how much risk he/she is partaking.
-                            </p>
+                            </p></span>
                             <footer class="align-center">
                                 <a href="index.html" class="button alt">Home</a>
+                                <button onclick="myFunction()" id="myBtn">Read more</button>
                             </footer>
                     </div>
                 </div>
@@ -125,6 +143,23 @@
                 </div>
             </footer>
 
+            <script>
+                function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
+                }
+            </script>
             <!-- Import jquery -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
