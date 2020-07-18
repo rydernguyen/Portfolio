@@ -17,21 +17,24 @@
             <a href="#menu" class="icon fa-list">Menu</a>
         </header>
 
-        <!--Nav -->
+        <!-- Nav -->
         <nav id="menu">
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="generic.html">Generic</a></li>
                 <li><a href="elements.html">Elements</a></li>
-                <li><a href="fractals.html">Fractals</a></li>
-                <li><a href="#">Test</a>
-                    <nav id="projectlist">
-                    <ul class="links">
-                        <li><a href="#" class="icon fa-linkedin-square" target="_blank"><span> LinkedIn</span></a></li>
-                    </ul>
-                    </nav>
-                </li>
-            
+                
+                <div class="dropdown">
+                <li><a href="#" class="dropbtn">All Projects</li>
+                  <div class="dropdown-content">
+                    <a href="fractals.html">Fractals Analysis</a>
+                    <a href="earthquake.html">Earthquake Analysis</a>
+                    <a href="monte.html">Monte Carlo Simulation</a>
+                  </div>
+                </div>
+                
+                <br><br><br><br>
+                <div id="bottom">
                 <li><h3>Contact info</h3></li>
                 <ul class="links">
                     <li><a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-linkedin-square" target="_blank"><span> LinkedIn</span></a></li>
@@ -39,9 +42,10 @@
                     <li><a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-file-text-o" target="_blank"><span> Resume</span></a></li>
                     <li><a href="#" class="icon fa-envelope-o" target="_blank"><span> Email</span></a></li>
                 </ul>
+                </div>
             </ul>
         </nav>
-
+        
         <!-- One -->
         <section id="one" class="wrapper style2">
             <div class="inner">
