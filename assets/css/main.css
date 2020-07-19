@@ -216,6 +216,25 @@
 
 	}
 
+	.grid-container-test {
+		grid-template-columns: 100px 50px 100px;
+		grid-template-rows: 80px auto 80px; 
+		column-gap: 10px;
+		row-gap: 15px;
+	  }
+
+	.item-a {
+		grid-column-start: 2;
+		grid-column-end: five;
+		grid-row-start: row1-start;
+		grid-row-end: 3;
+	  }
+	
+	.item-b {
+		grid-column-start: 2;
+		grid-column-end: 3;
+	  }
+
 /* Grid */
 
 	.row {
@@ -4036,6 +4055,283 @@
 		box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
 		visibility: visible;
 	}
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+.about .content h3 {
+	font-weight: 500;
+	font-size: 24px;
+	color: #58716d;
+	font-family: "Poppins", sans-serif;
+  }
+  
+  .about .content ul {
+	list-style: none;
+	padding: 0;
+  }
+  
+  .about .content ul li {
+	padding-bottom: 10px;
+  }
+  
+  .about .content ul i {
+	font-size: 20px;
+	padding-right: 4px;
+	color: #1bbca3;
+  }
+  
+  .about .content p:last-child {
+	margin-bottom: 0;
+  }
+  
+  .about .progress {
+	height: 50px;
+	display: block;
+	background: none;
+  }
+  
+  .about .progress .skill {
+	padding: 0;
+	margin: 0 0 6px 0;
+	text-transform: uppercase;
+	display: block;
+	font-weight: 600;
+	font-family: "Poppins", sans-serif;
+	color: #58716d;
+  }
+  
+  .about .progress .skill .val {
+	float: right;
+	font-style: normal;
+  }
+  
+  .about .progress-bar-wrap {
+	background: #e6eceb;
+  }
+  
+  .about .progress-bar {
+	width: 1px;
+	height: 10px;
+	transition: .9s;
+	background-color: #1bbca3;
+  }
+
+/*--------------------------------------------------------------
+# Info Box
+--------------------------------------------------------------*/
+.info-box .content {
+	padding: 60px 100px 0 100px;
+  }
+  
+  .info-box .content h3 {
+	font-weight: 400;
+	font-size: 34px;
+  }
+  
+  .info-box .content h4 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: 5px;
+  }
+  
+  .info-box .content p {
+	font-size: 15px;
+	color: #6b8a86;
+  }
+  
+  .info-box .img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	min-height: 400px;
+  }
+  
+  .info-box .accordion-list {
+	padding: 0 100px 60px 100px;
+  }
+  
+  .info-box .accordion-list ul {
+	padding: 0;
+	list-style: none;
+  }
+  
+  .info-box .accordion-list li + li {
+	margin-top: 15px;
+  }
+  
+  .info-box .accordion-list li {
+	padding: 20px;
+	background: #f2f5f4;
+	border-radius: 5px;
+  }
+  
+  .info-box .accordion-list a {
+	display: block;
+	position: relative;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	padding-right: 30px;
+	outline: none;
+	transition: ease-in-out 0.3s;
+  }
+  
+  .info-box .accordion-list a:hover {
+	color: #1bbca3;
+  }
+  
+  .info-box .accordion-list span {
+	color: #e83e8c;
+	font-weight: 600;
+	font-size: 18px;
+	padding-right: 10px;
+  }
+  
+  .info-box .accordion-list i {
+	font-size: 24px;
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+  
+  .info-box .accordion-list p {
+	margin-bottom: 0;
+	padding: 10px 0 0 0;
+  }
+  
+  .info-box .accordion-list .icon-show {
+	display: none;
+  }
+  
+  .info-box .accordion-list a.collapsed {
+	color: #343a40;
+  }
+  
+  .info-box .accordion-list a.collapsed:hover {
+	color: #1bbca3;
+  }
+  
+  .info-box .accordion-list a.collapsed .icon-show {
+	display: inline-block;
+  }
+  
+  .info-box .accordion-list a.collapsed .icon-close {
+	display: none;
+  }
+  
+  @media (max-width: 1024px) {
+	.info-box .content, .info-box .accordion-list {
+	  padding-left: 0;
+	  padding-right: 0;
+	}
+  }
+  
+  @media (max-width: 992px) {
+	.info-box {
+	  /* img {
+		padding-top: 30px;
+	  } */
+	}
+	.info-box .content {
+	  padding-top: 30px;
+	}
+	.info-box .accordion-list {
+	  padding-bottom: 30px;
+	}
+  }
+
+/*--------------------------------------------------------------
+# Our Team
+--------------------------------------------------------------*/
+.team {
+	background: #fff;
+	padding: 60px 0;
+  }
+  
+  .team .member {
+	text-align: center;
+	margin-bottom: 20px;
+	background: #343a40;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .team .member .member-info {
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: 0.2s;
+  }
+  
+  .team .member .member-info-content {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+	transition: bottom 0.4s;
+  }
+  
+  .team .member .member-info-content h4 {
+	font-weight: 700;
+	margin-bottom: 2px;
+	font-size: 18px;
+	color: #fff;
+  }
+  
+  .team .member .member-info-content span {
+	font-style: italic;
+	display: block;
+	font-size: 13px;
+	color: #fff;
+  }
+  
+  .team .member .social {
+	position: absolute;
+	left: 0;
+	bottom: -38px;
+	right: 0;
+	height: 48px;
+	transition: bottom ease-in-out 0.4s;
+	text-align: center;
+  }
+  
+  .team .member .social a {
+	transition: color 0.3s;
+	color: #fff;
+	margin: 0 10px;
+	display: inline-block;
+  }
+  
+  .team .member .social a:hover {
+	color: #1bbca3;
+  }
+  
+  .team .member .social i {
+	font-size: 18px;
+	margin: 0 2px;
+  }
+  
+  .team .member:hover .member-info {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+	opacity: 1;
+	transition: 0.4s;
+  }
+  
+  .team .member:hover .member-info-content {
+	bottom: 60px;
+	transition: bottom 0.4s;
+  }
+  
+  .team .member:hover .social {
+	bottom: 0;
+	transition: bottom ease-in-out 0.4s;
+  }
+
+
 /* Menu */
 
 	#menu {
