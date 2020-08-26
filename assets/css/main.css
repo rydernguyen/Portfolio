@@ -4115,7 +4115,7 @@ height: 100%;
 	--color-gray: #75787b;
 	--color-gray-light: #bbb;
 	--color-gray-disabled: #e8e8e8;
-	--color-green: #1b5bbc;
+	--color-green: rgb(12, 122, 136);;
 	--color-green-dark: #383;
 	--font-size-small: .75rem;
 	--font-size-default: .875rem;
@@ -4506,9 +4506,15 @@ height: 100%;
 					padding: 0;
 				}
 
-				/* #menu > ul.links > div > li {
+				#menu > ul.links > li > ul.innerlinks > li > a{
 					padding: -2em;
-				} */
+					color: rgba(78, 195, 211, 0.815);
+				}
+
+				#menu > ul.links > div > ul.bottomlinks > li > a{
+					padding: -2em;
+					color: rgba(121, 196, 204, 0.808);
+				}
 
 					#menu > ul.links > li > a:not(.button) {
 						border: 0;
@@ -4531,6 +4537,14 @@ height: 100%;
 					}
 
 						#menu > ul.links > li > a:not(.button):hover {
+							color: #FFF;
+						}
+
+						#menu > ul.links > li > ul.innerlinks > li > a:not(.button):hover {
+							color: #FFF;
+						}
+
+						#menu > ul.links > div > ul.bottomlinks > li > a:not(.button):hover{
 							color: #FFF;
 						}
 
