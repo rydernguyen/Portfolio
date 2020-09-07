@@ -77,13 +77,17 @@
                             </ul>   
                         </p>
 
-                          <div class="responsive">
+                          <!-- <div class="responsive">
                             <iframe class="embedly-embed" 
                             src="https://datastudio.google.com/embed/reporting/e35528cd-5413-4248-b955-d91067d6374a/page/sA4YB" 
                             frameborder="0" style="border:0" allowfullscreen>
                             </iframe>
-                          </div>
-                        
+                          </div> -->
+                          
+                        <div class="responsive">
+                        <iframe src="https://public.tableau.com/views/InvestmentDashboard_15988431317000/Dashboard1?:language=en&:display_count=y&publish=yes&:origin=viz_share_link&:showVizHome=no&:embed=true" frameborder="0"></iframe>
+                        </div>
+
                         <div class="member-info">
                           <div class="member-info-content">
                             <b>
@@ -96,158 +100,13 @@
                         <br>
                         <h2>Data Pipeline Process</h2>
                         
-                        <!-- <div id="retainable-rss-embed" 
+                        <div id="retainable-rss-embed" 
                         data-rss="https://medium.com/feed/@rydernguyen"
                         data-maxcols="2" 
                         data-layout="slider"
                         data-poststyle="inline"
                         data-offset="-100">
-                        </div> -->
-                        <div>
-                          <div class="box">
-                              <div class="image fitted">
-                                  <img src="images/COVID - Workflow.jpg" alt="" />
-                              </div>
-                          </div>
                         </div>
-                        
-                        <!-- <iframe src="" frameborder="0"></iframe> -->
-                        <!-- data-buttonclass="btn btn-primary"
-                        data-readmore="Read the rest"  -->
-                        <!-- data-poststyle="inline" -->
-                        
-
-                        <!-- OLD REPO -->
-                        <br>
-                        <!-- <div>
-                          <a href="#"><img src="https://www.lumiata.com/wp-content/uploads/2020/02/logotype-lumiata.svg" alt="" class="img-fluid"></a>
-                        </div> -->
-                        <h2>Lumiata (Hackathon)</h2>
-                        <a href="https://github.com/stephaniedominguez/COVID" target="_blank"><h4><i class="icon fa-github"></i> Original Repository</a></h4>
-                        <p> A group of Hult students explore and built an ARIMA & Rt model using Python for a hackathon</p>
-                        
-                        <span id="dots"></span> <span id="more"> 
-                        <section id="insights">
-                        <h2>Insights</h2>
-                            <p>
-                            <b>We predict how many confirmed cases is going to appeer in each county in the next 7 days</b>
-                                using the ARIMA model we forecast new cases in the coming week.
-                                The ARIMA model works by finding a linear regression based on the time series previous timelags (AR, auto-regression).
-                                To make the time series stationary we need to differentiate it (I, integrated). It also looks at the moving average (MA) when forecasting.
-                                We use a gridsearch function to find the appropriate orders for each county.
-                            </p>
-                        
-                        
-                        <div class="info-box">
-                            <div class="accordion-list">
-                                <ul>
-                                  <li>
-                                    <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> According to our calculated Rt <i class="icon fa-chevron-circle-down"></i></a>
-                                    <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
-                                      <p>
-                                        According to our calculated Rt, as of 04.30.20, the pandemic is dying out in San Francisco, with an Rt below 1.
-                                      </p>
-                                    </div>
-                                  </li>
-                  
-                                    <li>
-                                    <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Counties with the highest prediction <i class="icon fa-chevron-circle-down"></i></a>
-                                    <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
-                                      <p>
-                                        The five counties with the highest predicted new cases over the next week, from 04.30.20, are:
-                                        <br>New York City, New York, 19077
-                                        <br>Cook, Illinois, 11186
-                                        <br>Los Angeles, California, 6642
-                                        <br>Philadelphia, Pennsylvania, 3484
-                                        <br>Middlesex, Massachusetts, 3435
-                                      </p>
-                                    </div>
-                                    </li>
-                  
-                                </ul>
-                            </div>
-                        </div>
-                      </section>
-
-            <!-- ======= Our Team Section ======= -->
-            <section id="team" class="team">
-                <div class="container">
-                
-                <header class="align-center">
-                    <h2>Our Team</h2>
-                </header>
-                
-                <div class="row justify-content-md-center">
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                      <div class="member">
-                        <img src="./images/ryder.jpeg" alt="" class="img-fluid">
-                        <div class="member-info">
-                          <div class="member-info-content">
-                            <h4>Tien "Ryder" Nguyen</h4>
-                            <span>Data Analyst</span>
-                            <a href="https://www.linkedin.com/in/tien-ryder-nguyen-2251785a/" class="icon fa-linkedin-square" target="_blank">LinkedIn</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                
-                    <div class="col-xl-3 col-lg-3 col-md-6">
-                        <div class="member">
-                          <img src="./images/luis.jpeg" class="img-fluid" alt="">
-                          <div class="member-info">
-                            <div class="member-info-content">
-                              <h4>Luis E. Ariza</h4>
-                              <span>Data Analyst</span>
-                              <a href="https://www.linkedin.com/in/luis-e-ariza/" class="icon fa-linkedin-square" target="_blank">LinkedIn</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-xl-3 col-lg-3 col-md-6" data-wow-delay="0.2s">
-                        <div class="member">
-                          <img src="./images/mats.jpeg" class="img-fluid" alt="">
-                          <div class="member-info">
-                            <div class="member-info-content">
-                              <h4>Mats Borgen Lunde</h4>
-                              <span>Data Analyst</span>
-                              <a href="https://www.linkedin.com/in/matsblunde/" class="icon fa-linkedin-square" target="_blank">LinkedIn</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                </div>
-                
-                <div class="row justify-content-md-center">
-                    <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
-                        <div class="member">
-                          <img src="./images/pk.jpeg" class="img-fluid" alt="">
-                          <div class="member-info">
-                            <div class="member-info-content">
-                              <h4>Punyisa Kraisang</h4>
-                              <span>Software Engineer</span>
-                              <a href="https://www.linkedin.com/in/punyisakraisang/" class="icon fa-linkedin-square" target="_blank">LinkedIn</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
-                        <div class="member">
-                          <img src="./images/stephanie.png" class="img-fluid" alt="">
-                          <div class="member-info">
-                            <div class="member-info-content">
-                              <h4>Stephanie Dominguez</h4>
-                              <span>Software Engineer</span>
-                              <a href="https://www.linkedin.com/in/stephanie-dominguez/" class="icon fa-linkedin-square" target="_blank">LinkedIn</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </section>
 
           </span>
           <button onclick="myFunction()" id="myBtn">Read more</button>
