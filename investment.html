@@ -53,7 +53,7 @@
         <section id="two" class="wrapper style3">
             <div class="inner">
                 <header class="align-center">
-                    <p> Tableau Dashboard with ETL using Python & Google Cloud Platform</p>
+                    <p>Tableau Investment Dashboard using Python, Google Sheets & BigQuery</p>
                     <h2>401k Portfolio</h2>
                 </header>
             </div>
@@ -68,21 +68,22 @@
                         <a href="https://github.com/rydernguyen/finance_401k" target="_blank"><h4><i class="icon fa-github"></i> Repository</a></h4>
                         <!-- <a href="https://medium.com/@rydernguyen/how-to-set-up-a-covid-19-workflow-and-dashboard-using-the-google-cloud-platform-b0e5165333e5?sk=6266ffdb056466e73a7bc38a23748722" target="_blank"><h4><i class="icon fa-medium"></i> Medium Story</a></h4> -->
                       
-                        <p><h4>I want to create a tool and interface that gather information relevant to my 401k investment in one place instead of having to waste 
-                            time switching between platforms. The solution is to combine data from Fidelity Investment, Yahoo Finance, Morningstar and mutual 
+                        <p><h4>I want to create an interface that presents information relevant to my 401k investment in one place instead of having to 
+                            switch between different platforms. My solution is to combine data from Fidelity Investment, Yahoo Finance, Morningstar, Investopedia and mutual 
                             fund universe data from Kaggle for both tracking and research purposes.
-                            Utilizing my current knowledge of the Google Cloud Platform, coupled with the power of Python and APIs, I created a Tableau dashboard. This project involves:
+                            Utilizing my current knowledge of the Google Cloud Platform, coupled with the power of Python and APIs, I created a Tableau dashboard
+                            that centralizes the data concerning my 401k portfolio that I'm most interested in. This project involves:
                         
                         </h4>
                             <ul>
-                                <li>Fully designing the data pipeline from <b>EXTRACT</b> (from external sources Yahoo Finance through a Python package, data written to Google Sheets) to <b>TRANSFORM</b> (pandas & APIs to communicate with BigQuery and Google Sheets) to <b>LOAD</b> (linking/blending tables for visualization in Tableau)</li>
-                                <li>Utilizing the ability of <b>Tableau Desktop (design) & Tableau Online (publish)</b> to connect to multiple data source types (Google Sheets and BigQuery) while optimizing performance based on the size of data</li>
-                                <li>Designing a user-friendly interface with tooltips and appropriate filters using <b>calculated fields, parameters, text auto-split and dashboard actions</b></li>
+                                <li>Fully designing the data pipeline from <b>EXTRACT</b> (from external sources like Yahoo Finance through a Python package, data written to Google Sheets) to <b>TRANSFORM</b> (pandas & APIs to communicate with BigQuery and Google Sheets) to <b>LOAD</b> (linking/blending tables for visualization in Tableau)</li>
+                                <li>Utilizing the ability of <b>Tableau Desktop (design) & Tableau Online (publish)</b> to connect to multiple data sources <b>(Google Sheets and BigQuery)</b> while optimizing performance based on the size of data</li>
+                                <li>Designing a user-friendly interface with tooltips and appropriate filters using <b>calculated fields, parameters, text auto-split and set/URL actions</b></li>
                             </ul>   
                         </p>
                           
                         <div class="responsive">
-                            <iframe src="https://public.tableau.com/views/InvestmentDashboardv_3_2/401kDashboard?:language=en&:display_count=y&publish=yes&:origin=viz_share_link&:showVizHome=no&:embed=true" frameborder="0" allowfullscreen=True></iframe>
+                            <iframe src="https://public.tableau.com/views/InvestmentDashboard_16009677202950/401kDashboard?:language=en&:display_count=y&publish=yes&:origin=viz_share_link&:showVizHome=no&:embed=true" frameborder="0" allowfullscreen=True></iframe>
                         </div>
 
                         <div class="member-info">
@@ -104,9 +105,17 @@
                         data-poststyle="inline"
                         data-offset="-100">
                         </div> -->
+                        <br>
+                        <h2>Next Steps</h2>
+                        <ul>
+                            <li>Incorporate machine learning and data models (eg. Markov-Switching Multifractals, GARCH) to forecast volatility of individual investments and the portfolio</li>
+                            <li>Build a sandbox to visualize how a different mix of investments will perform in the future with a set of assumptions</li>
+                            <li>Design a robust interface to compare two investments</li>
+                            <li>Customize alerts for user-defined thresholds</li>
+                        </ul>
           <br>
           <br>
-          
+
             <!-- Footer -->
             <footer id="footer">
               <div class="container">
