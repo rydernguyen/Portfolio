@@ -2454,6 +2454,13 @@ height: 100%;
 	grid-template-columns: 50% 50%;
 	gap: 20px;
 }
+
+.top-container-inner1 {	
+    display: grid;
+	justify-content: space-evenly;
+	grid-template-columns: 5% 95%;
+	gap: 20px;
+}
 /* Image */
 
 	.image {
@@ -2823,7 +2830,7 @@ height: 100%;
 /* Wrapper */
 
 	.wrapper {
-		padding: 6rem 0 4rem 0 ;
+		padding: 4rem 0 1rem 0 ;
 		position: relative;
 		margin: 0;
 	}
