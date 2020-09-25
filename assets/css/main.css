@@ -2425,11 +2425,27 @@ height: 100%;
 			display: none;
 		}
 
+
+/* @media screen and (min-width: 480px) {
+	.top-container-outer {	
+		display: grid;
+		justify-content: space-evenly;
+		grid-template-columns: 30% 70%;
+		gap: 20px;
+	}
+} */
 .top-container-outer {	
     display: grid;
 	justify-content: space-evenly;
-	grid-template-columns: 30% 70%;
+	grid-template-columns: 40% 60%;
 	gap: 20px;
+}
+
+@media screen and (max-width: 828px) {
+.top-container-outer {	
+	display: flex;
+	flex-direction: column;
+}
 }
 
 .top-container-inner {	
