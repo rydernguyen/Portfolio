@@ -2425,10 +2425,17 @@ height: 100%;
 			display: none;
 		}
 
-.top-container {	
+.top-container-outer {	
     display: grid;
 	justify-content: space-evenly;
-	grid-template-columns: 30% 30% 40%;
+	grid-template-columns: 30% 70%;
+	gap: 20px;
+}
+
+.top-container-inner {	
+    display: grid;
+	justify-content: space-evenly;
+	grid-template-columns: 50% 50%;
 	gap: 20px;
 }
 /* Image */
