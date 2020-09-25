@@ -2438,7 +2438,7 @@ height: 100%;
     display: grid;
 	justify-content: space-evenly;
 	grid-template-columns: 40% 60%;
-	gap: 20px;
+	gap: 10px;
 }
 
 @media screen and (max-width: 828px) {
@@ -2449,17 +2449,24 @@ height: 100%;
 }
 
 .top-container-inner {	
+    display: flex;
+	justify-content: space-evenly;
+	grid-template-columns: 50% 50%;
+	gap: 10px;
+}
+
+.top-container-inner-skill {	
     display: grid;
 	justify-content: space-evenly;
 	grid-template-columns: 50% 50%;
-	gap: 20px;
+	gap: 10px;
 }
 
 .top-container-inner1 {	
     display: grid;
 	justify-content: space-evenly;
 	grid-template-columns: 5% 95%;
-	gap: 20px;
+	gap: 10px;
 }
 /* Image */
 
