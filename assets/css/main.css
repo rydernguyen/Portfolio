@@ -2425,6 +2425,12 @@ height: 100%;
 			display: none;
 		}
 
+.top-container {	
+    display: grid;
+	justify-content: space-evenly;
+	grid-template-columns: 30% 30% 40%;
+	gap: 20px;
+}
 /* Image */
 
 	.image {
@@ -2472,7 +2478,9 @@ height: 100%;
 		.image.fitted {
 			display: block;
 			/* margin: 0 0 2rem 0; */
-			width: 85%;
+			/* width: 40%; */
+			width: 100%;
+			height: auto;
 			margin-top: auto;
 			margin-left: auto;
 			margin-right: auto;
