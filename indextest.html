@@ -12,9 +12,36 @@
         <link rel="stylesheet" href="assets/css/main.css" />
         <!-- Benzene Ring icon icon by Icons8 -->
         <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+
+        <!-- Tableau resize script -->
+        <script type="text/javascript"
+            src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+            <script type="text/javascript">
+            var viz;
+
+            function initViz() {
+                var containerDiv = document.getElementById("vizContainer"),
+                    url = "https://public.tableau.com/views/InvestmentDashboard_16009677202950/401kDashboard?:language=en&:display_count=y&:origin=viz_share_link",
+                    options = {
+                        hideTabs: true
+                    };
+
+                viz = new tableau.Viz(containerDiv, url, options);
+            }
+
+            function vizResize() {
+                var width = document.getElementById("resizeWidth").value;
+                var height = document.getElementById("resizeHeight").value;
+                var sheet = viz.getWorkbook().getActiveSheet();
+
+                sheet.changeSizeAsync(
+                    {"behavior": "EXACTLY", "maxSize": { "height": height, "width": width }})
+                    .then(viz.setFrameSize(parseInt(width, 10), parseInt(height, 10)));
+            }
+        </script>
     </head>
 
-    <body>
+    <body onload="initViz();">
         <!-- Header -->
         <header id="header" class="alt">
             <div class="logo"><a href="index.html">Ryder Nguyen<span> Portfolio</span></a></div>
@@ -51,7 +78,6 @@
                 </div>
             </ul>
         </nav>
-
 
         <section id="aboutme" class="wrapper style2">
             <div class="inner">
@@ -222,8 +248,6 @@
         </div>
     </section>
 
-
-
         <!-- Featured 1 -->
         <section id="401k" class="wrapper style2">
             <div class="inner">
@@ -233,8 +257,16 @@
                             <p><a href="investment.html">Tableau Investment Dashboard using Python, Google Sheets & BigQuery</a></p>
                             <h2><a href="investment.html">401k Portfolio</a></h2>
                         </header>
-                            <div class="responsive">
+                            <!-- <div class="responsive">
                                 <iframe src="https://public.tableau.com/views/InvestmentDashboard_16009677202950/401kDashboard?:language=en&:display_count=y&publish=yes&:origin=viz_share_link&:showVizHome=no&:embed=true" frameborder="0" allowfullscreen=True></iframe>
+                            </div> -->
+                            <div id="vizContainer" style="width:800px; height:700px; overflow:auto;"></div>
+                            <div id="controls" style="padding:20px;">
+                                <form id="resizeForm">
+                                    <input type="text" id="resizeWidth" placeholder="Width">
+                                    <input type="text" id="resizeHeight" placeholder="Height">
+                                    <button type="button" onClick="vizResize();">Resize</button>
+                                </form>
                             </div>
 
                             <b>
