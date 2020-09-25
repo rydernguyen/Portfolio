@@ -2459,7 +2459,7 @@ height: 100%;
     display: grid;
 	justify-content: space-evenly;
 	grid-template-columns: 50% 50%;
-	gap: 10px;
+	gap: 20px;
 }
 
 .top-container-inner1 {	
