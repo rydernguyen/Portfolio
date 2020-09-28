@@ -2440,10 +2440,6 @@ height: 100%;
 	}
 } */
 
-.phone_size{
-	width: 414px;
-	height: 896px;
-}
 .top-container-2-even {	
     display: grid;
 	justify-content: space-evenly;
