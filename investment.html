@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width" intital-scale=1>
         <title>Ryder Nguyen_401k Investments</title>
         <style>
-            h2 {color: green;}
+            @media only screen and (min-width:320px) and (max-width: 763px) {.tablet,.desktop{display:none;}}
+            @media only screen and (min-width:1000px){.tablet,.phone{display:none;}}
         </style>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/main.css" />
@@ -81,18 +82,19 @@
                                 <li>Designing a user-friendly interface with tooltips and appropriate filters using <b>calculated fields, parameters, text auto-split and set/URL actions</b></li>
                             </ul>   
                         </p>
-                          
-                        <div class="responsive">
-                            <iframe src="https://public.tableau.com/views/InvestmentDashboardv2_3/401kDashboard?:language=en&:display_count=y&publish=yes&:origin=viz_share_link&:showVizHome=no&:embed=true" frameborder="0" allowfullscreen=True></iframe>
-                        </div>
-
-                        <div class="member-info">
-                          <div class="member-info-content">
-                            <b>
-                              <span style="color: crimson;">For better viewing experience of the dashboard, please enter full screen on a desktop device.</span></a>
-                            </b>
+                        
+                        <div class="desktop">
+                            <div class="responsive">
+                                <iframe src="https://public.tableau.com/views/InvestmentDashboardDesktop/401kDashboard?:language=en&:display_count=y&publish=yes&:origin=viz_share_link&:showVizHome=no&:embed=true" frameborder="0" allowfullscreen=True></iframe>
                             </div>
                         </div>
+
+                        <div class="phone">
+                            <iframe src="https://public.tableau.com/views/InvestmentDashboardPhone/HOME?:language=en&:display_count=y&publish=yes&:origin=viz_share_link&:showVizHome=no&:embed=true" frameborder="0" style="width:330px; height:714px"></iframe>
+                        </div>
+                        <b>
+                            <span style="color: crimson;">For better viewing experience of the dashboard, please enter full screen on a desktop device.</span></a>
+                        </b>
                         
                         <!-- EMBED MEDIUM SECTION -->
                         <!-- <br>
